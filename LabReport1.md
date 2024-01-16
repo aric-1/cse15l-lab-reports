@@ -56,9 +56,9 @@ This is not an error.
 [user@sahara ~]$ ls lecture1/Hello.java 
 lecture1/Hello.java
 ```
-When a file is provided as an argument, the output is just the path for that file.
+When a file is provided as an argument, the output is just the path for that file. This is because this path doesn't lead to a directory, so the command can't find anything inside but itself.
 The working directory at the start of the code is `~`, or `/home`.
-This is not an error.
+This seems like an error, since the command fails perform its purpose - to list the contents of a directory.
 
 # `cat` Command
 
@@ -67,7 +67,7 @@ This is not an error.
 [user@sahara ~/lecture1]$ cat
 
 ```
-With no arguments, the `cat` command waits for the user to input content before printing out what the user inputted.
+With no arguments, the `cat` command waits for the user to input content before printing out what the user inputted. In this state, it will duplicate user input.
 The working directory at the start of this code is `/home/lecture1/`.
 This is not an error.
 
