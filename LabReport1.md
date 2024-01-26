@@ -5,7 +5,7 @@
 [user@sahara /]$ cd
 [user@sahara ~]$
 ```
-This appears to always change the working directory to /home (denoted by ~), no matter what the starting directory is. This is the default behavior of the `cd` command.
+This appears to always change the working directory to `/home` (denoted by `~`), no matter what the starting directory is. This is the default behavior of the `cd` command.
 The working directory at the start of the code is `/`, or the root directory.
 This is not an error.
 
@@ -16,7 +16,7 @@ This is not an error.
 [user@sahara ~]$ cd lecture1
 [user@sahara ~/lecture1]$
 ```
-Using 'cd' with a directory changes the current working directory to the specified directory, as is the purpose of the command. By running `cd lecture1`, the directory changes from the `home` directory to `home/lecture1/`
+Using `cd` with a directory changes the current working directory to the specified directory, as is the purpose of the command. By running `cd lecture1`, the directory changes from the `home` directory to `home/lecture1/`
 The working directory at the start of the code is `~`, or `/home`.
 This is not an error.
 
@@ -58,7 +58,7 @@ lecture1/Hello.java
 ```
 When a file is provided as an argument, the output is just the path for that file. This is because this path doesn't lead to a directory, so the command can't find anything inside but itself.
 The working directory at the start of the code is `~`, or `/home`.
-This seems like an error, since the command fails perform its purpose - to list the contents of a directory.
+This is not an error.
 
 # `cat` Command
 
