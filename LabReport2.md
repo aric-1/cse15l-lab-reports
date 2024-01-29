@@ -39,10 +39,12 @@ class ChatServer {
 Screenshot 1:
 ![image](https://github.com/aric-1/cse15l-lab-reports/assets/156359530/17d8af66-792f-45bc-b232-bd1bb3095192)
 Methods called: 
-  `main(String[] args` in the `ChatServer` class is called first, which then calls the `start` method in the `Server` class, which eventually calls
   
-  
-  The `handleRequest` method in `Handler` is called. The methods called in the `Server` class are not part of my code.
+  The `handleRequest(URI url)` method in `Handler` is called from the `handle(final HttpExchange exchange)` method in the `Server` class. The second method
+  prints onto the website the output of the first method, which takes the URL that the user entered into the search bar and determines the user and message to be used
+  to add a message to the list of text messages on the website. The part before the query is confirmed to be `"add-message"`, the part between the question mark
+  and the ampersand is checked to be `"s=<some string>"`, and the part after the ampersand is confirmed to be `"user=<some string>"`. The strings from the second and third part are
+  processed into an addition to the existing `s` field.
   
 Arguments, fields: `URI url` is passed  into the `handleRequest` method, which contains the instructions for the program to follow. 
 The field `s` in the  `handler` class keeps track of the messages that have been sent. As a result of this call, the `s` field is changed
@@ -52,6 +54,13 @@ a new message, colon and space, username, and newline to the string `s` from the
 
 Screenshot 2:
 ![image](https://github.com/aric-1/cse15l-lab-reports/assets/156359530/cf93da52-f6f1-470d-890d-27bb54782dc0)
+
+  
+  The `handleRequest(URI url)` method in `Handler` is called from the `handle(final HttpExchange exchange)` method in the `Server` class. The second method
+  prints onto the website the output of the first method, which takes the URL that the user entered into the search bar and determines the user and message to be used
+  to add a message to the list of text messages on the website. The part before the query is confirmed to be `"add-message"`, the part between the question mark
+  and the ampersand is checked to be `"s=<some string>"`, and the part after the ampersand is confirmed to be `"user=<some string>"`. The strings from the second and third part are
+  processed into an addition to the existing `s` field.
 
 Arguments, fields: `URI url` is passed  into the `handleRequest` method, which contains the instructions for the program to follow. 
 The field `s` in the  `handler` class keeps track of the messages that have been sent. As a result of this call, the `s` field is changed
@@ -74,7 +83,7 @@ Logging in without signing into ieng6:
 
 ## Something new I learned:
 
-I learned how to create a public and private SSH key using the ssh-keygen command. I also learned where the files should go
+I learned how to create a public and private SSH key using the ssh-keygen command. I also learned where the files containing the keys should go
 and how to set up the keys with a server.
 
 
