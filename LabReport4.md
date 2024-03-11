@@ -43,7 +43,7 @@ I used `x` to delete the erroneous character and `i` to enter insert mode. I the
 
 Keys pressed:
 
-'<up><up><enter>'
+`<up><up><enter>`
 By pressing the up arrow twice, I brought up the command `bash test.sh` (which I had run before the previous command) to run the tests. Then, I pressed enter to execute the tests.
 
 ![image](https://github.com/aric-1/cse15l-lab-reports/assets/156359530/0562c7f0-9f88-4867-9bd8-0749cb091b6b)
