@@ -18,14 +18,19 @@ Here's a screenshot of my code so far:
 
 TA's Response:
 
-It looks like your program isn't terminating. There is probably an infinite loop somewhere in your code. Have you checked that the while loop's termination condition is correct?
+It looks like your program isn't terminating. There is probably an infinite loop somewhere in your code. Have you checked that the while loop's termination condition is correct? You should try setting a breakpoint in VSCode and debugging it using the step button.
 
 ## Step 3:
 
 Student:
 
-I found the bug in the program! I accidentally initialized the boolean variable `sorted` to `false` so that it could never be true. 
+I found the bug in the program! You were right that it was an infinite loop, and that the problem was with the while loop's termination condition. I accidentally initialized the boolean variable `sorted` to `false` so that it could never be true. 
 This means the program never exited the loop or returned anything, which is why my terminal got stuck.
+
+Picture of VSCode Java debugger working:
+
+![image](https://github.com/aric-1/cse15l-lab-reports/assets/156359530/082299a8-c09d-4a25-a302-ea2f29827506)
+
 
 ## Setup Information
 
